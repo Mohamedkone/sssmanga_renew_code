@@ -159,10 +159,10 @@ h2 {
 }
 
 .update .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -171,29 +171,61 @@ h2 {
           align-items: center;
 }
 
-.update .content-card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 76px 0;
-}
-
-.update .card {
-  width: 352px;
-  height: auto;
-  background-color: grey;
-  margin: 0 20px;
-}
-
-.update .card img {
+.card-image img {
+  display: block;
   width: 100%;
-  height: inherit;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-.update .arrow img {
-  width: 100%;
+/* Layout Styles */
+.card-list {
+  display: block;
+  margin: 1rem auto;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.card {
+  display: inline-block;
+  min-width: 10%;
+  max-width: 20rem;
+  margin: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s, -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-0.5rem) scale(1.0125);
+          transform: translateY(-0.5rem) scale(1.0125);
+  -webkit-box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-description {
+  display: block;
+  padding: 1em 0.5em;
+  color: #515151;
+  text-decoration: none;
+}
+
+.card-description > h2 {
+  margin: 0 0 0.5em;
+}
+
+.card-description > p {
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

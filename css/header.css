@@ -1,0 +1,126 @@
+.hover {
+  display: none;
+  position: absolute;
+  background: rgba(10, 190, 200, 0.1);
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  row-gap: 30px;
+}
+
+header .burger {
+  display: none;
+}
+
+header #light-shift {
+  margin: auto;
+}
+
+header #title {
+  margin: auto 0;
+}
+
+header #log {
+  margin: auto 0;
+  text-align: end;
+}
+
+header #log a {
+  color: #fff;
+  background-color: #307CFF;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+
+header #top-nav {
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  list-style-type: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+header #top-nav a {
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+header #top-nav a:hover {
+  text-decoration: none;
+  color: #307CFF;
+}
+
+header #top-nav a:focus {
+  text-decoration: none;
+  color: none;
+}
+
+header #top-nav a:active {
+  text-decoration: none;
+  color: teal;
+}
+
+header #top-nav a:visited {
+  text-decoration: none;
+  color: none;
+}
+
+header #search {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+header #search .field {
+  padding: 5px 10px;
+  border: 1px solid #307CFF;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: auto;
+}
+
+header #search input {
+  font-size: 1.5em;
+  font-font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  width: 80%;
+}
+
+header #search input:focus {
+  outline: none;
+}
+
+header #search input[type="search"]::-webkit-search-decoration,
+header #search input[type="search"]::-webkit-search-cancel-button,
+header #search input[type="search"]::-webkit-search-results-button,
+header #search input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+/*# sourceMappingURL=header.css.map */

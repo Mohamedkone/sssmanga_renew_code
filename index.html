@@ -4,23 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 </html>
 
 <body>
+    <div class="hover"></div>
     <header>
         <div id="light-shift">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="assets/light_shift.svg" alt="">
         </div>
 
         <div id="title">
             <div class="logo">
-                <img src="" alt="sssmanga logo">
+                <img src="assets/title_light.svg" alt="sssmanga logo">
             </div>
-            <img src="" alt="line">
+            <img src="assets/light-line.svg" alt="line" id="line">
         </div>
 
         <div class="burger">
@@ -30,10 +30,6 @@
         <div id="log">
             <a href=""><span>Login</span></a>
             <a href=""><span>Sign Up</span></a>
-        </div>
-
-        <div id="search">
-            <input type="search" name="search" id="search">
         </div>
 
         <nav id="top-nav">
@@ -50,21 +46,42 @@
                 <li>COMMUNITY</li>
             </a>
         </nav>
+
+        <div id="search">
+            <div class="field">
+                <input type="search" name="search" id="search" placeholder="search here...">
+                <img src="assets/search.svg" alt="">
+            </div>
+        </div>
+
     </header>
     <section class="cover">
-        <img src="" alt="cover">
+        <img src="images/drf.jpg" alt="cover">
     </section>
 
     <section class="update">
         <h2>UPDATED ...DAYS AGO</h2>
         <div class="container">
-            <div class="left-arrow"><img src="" alt="left arrow"></div>
+            <div class="arrow left-arrow"><img src="assets/l_left-click.svg" alt="left arrow"></div>
             <div class="content-card">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card">
+                    <img src="images/drf.jpg" alt="">
+                    <div class="desc"></div>
+                </div>
+                <div class="card">
+                    <img src="images/drf.jpg" alt="">
+                    <div class="desc"></div>
+                </div>
+                <div class="card">
+                    <img src="images/drf.jpg" alt="">
+                    <div class="desc"></div>
+                </div>
+                <div class="card">
+                    <img src="images/drf.jpg" alt="">
+                    <div class="desc"></div>
+                </div>
             </div>
-            <div class="right-arrow"><img src="" alt="right arrow"></div>
+            <div class="arrow right-arrow"><img src="assets/l_right-click.svg" alt="right arrow"></div>
         </div>
     </section>
 

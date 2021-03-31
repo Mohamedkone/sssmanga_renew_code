@@ -1,0 +1,91 @@
+$lblue: #307CFF
+
+.hover
+  display: none
+  position: absolute
+  background: rgba(10,190,200,0.1 )
+  width: 70%
+  height: 100%
+  margin: auto
+  left: 0
+  right: 0
+
+header
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  width: 70%
+  text-align: center
+  justify-content: center
+  margin: 20px auto 40px auto
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  row-gap: 30px
+
+  .burger
+    display: none
+
+  #light-shift
+    margin: auto
+  #title
+    margin: auto 0
+    text-align:
+
+  #log
+    margin: auto 0
+    text-align: end
+    a
+      color: #fff
+      background-color: $lblue
+      font-size: 18px
+      text-decoration: none
+      padding: 5px 25px
+      font-weight: bold
+
+  #top-nav
+    margin: auto 0
+    display: flex
+    grid-column-start: 1
+    grid-column-end: 3
+    width: 100%
+    list-style-type: none
+    justify-content: start
+    a
+      text-decoration: none
+      margin-right: 50px
+      font-size: 20px
+      font-weight: bold
+      color: #000
+    a:hover
+      text-decoration: none
+      color: $lblue
+    a:focus
+      text-decoration: none
+      color: none
+    a:active
+      text-decoration: none
+      color: teal
+    a:visited
+      text-decoration: none
+      color: none
+
+  #search
+    grid-column-start: 3
+    .field
+      padding: 5px 10px
+      border: 1px solid $lblue
+      border-radius: 10px
+      width: 70%
+      margin-left: auto
+
+    input
+      font:
+        size: 1.5em
+        font-family: Georgia, 'Times New Roman', Times, serif
+      border: none
+      width: 80%
+    input:focus
+      outline: none
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration
+      -webkit-appearance: none

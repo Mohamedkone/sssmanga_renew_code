@@ -1,6 +1,10 @@
 @import header
 $b_color1: #f9f9f9
 $b_color2: #ebebeb
+$transform_card: translateY(-0.5rem) scale(1.0125)
+$shadow_hover: 0.5em 3rem -1rem rgba(0,0,0,0.5)
+$shadow_card: 0 0 3rem -1rem rgba(0,0,0,0.5)
+$transition_card: transform 0.1s ease-in-out, box-shadow 0.1s
 
 *
     margin: 0
@@ -59,20 +63,18 @@ section
     font-size: 1rem
     text-decoration: none
     overflow: hidden
-    box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5)
-    transition: transform 0.1s ease-in-out, box-shadow 0.1s
-
+    box-shadow: $shadow_card
+    transition: $transition_card
 .card:hover
-    transform: translateY(-0.5rem) scale(1.0125)
-    box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5)
-
+    transform: $transform_card
+    box-shadow: $shadow_hover
 .card-description
     display: block
     padding: 1em 0.5em
     color: #515151
     text-decoration: none
 
-.card-description > h2
+.card-description > h3
     margin: 0 0 0.5em
 
 .card-description > p
@@ -80,14 +82,54 @@ section
 
 .suggestion
     background: $b_color2
-    .container
-    
+    ul
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
 
-
-
+        justify-items: center
 
 .top-artist
     background: $b_color1
+    font-weight: $f_weight
+    .container
+        display: flex
+        flex-wrap: wrap
+        margin: 60px 0
+        justify-content: center
+        justify-content: space-around
+
+    .artist
+
+        transition: $transition_card
+
+        .bubble
+            max-width: 250px
+            width: 250px
+            max-height: 250px
+            height: 250px
+            background-color: #000
+            border-radius: 50%
+            box-shadow: $shadow_card
+            img
+                width: 250px
+                height: 250px
+                object-fit: cover
+                object-position: center
+                border-radius: 50%
+        p
+            margin: 10px
+            font:
+                size: $f_sizeM
+                family: $f_fam2
+                box-shadow: $shadow_card
+    a
+        color: $lblue
+        text-decoration: none
+        
+
+    .artist:hover
+        transform: $transform_card
+        box-shadow: $shadow_hover
 
 .color-spread
     background: $b_color2

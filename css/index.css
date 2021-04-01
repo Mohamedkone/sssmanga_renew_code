@@ -213,8 +213,8 @@ section {
 .card:hover {
   -webkit-transform: translateY(-0.5rem) scale(1.0125);
           transform: translateY(-0.5rem) scale(1.0125);
-  -webkit-box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .card-description {
@@ -224,7 +224,7 @@ section {
   text-decoration: none;
 }
 
-.card-description > h2 {
+.card-description > h3 {
   margin: 0 0 0.5em;
 }
 
@@ -236,8 +236,78 @@ section {
   background: #ebebeb;
 }
 
+.suggestion ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
 .top-artist {
   background: #f9f9f9;
+  font-weight: bold;
+}
+
+.top-artist .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 60px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-artist .artist {
+  -webkit-transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s, -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+}
+
+.top-artist .artist .bubble {
+  max-width: 250px;
+  width: 250px;
+  max-height: 250px;
+  height: 250px;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.top-artist .artist .bubble img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.top-artist .artist p {
+  margin: 10px;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.top-artist a {
+  color: #307CFF;
+  text-decoration: none;
+}
+
+.top-artist .artist:hover {
+  -webkit-transform: translateY(-0.5rem) scale(1.0125);
+          transform: translateY(-0.5rem) scale(1.0125);
+  -webkit-box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .color-spread {

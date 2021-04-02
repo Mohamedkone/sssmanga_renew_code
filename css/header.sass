@@ -43,7 +43,7 @@ header
     a
       color: #fff
       background-color: $lblue
-      font-size: 18px
+      font-size: $f_sizeS
       text-decoration: none
       padding: 5px 25px
       font-weight: bold
@@ -100,7 +100,8 @@ header
 
 @media screen and (max-width: 1260px)
   header
-
+    #light-shift
+      margin-right: 20px
     #top-nav
       grid-column-start: 1
       grid-column-end: 4
@@ -123,4 +124,44 @@ header
       .field
         margin: auto
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 768px)
+  header
+    width: 90%
+    #title
+      grid-column-start: 1
+      grid-column-end: 5
+      img
+        width: 100%
+      #line
+        display: none
+    #light-shift
+      grid-row-start: 2
+      grid-row-end: 3
+      width: 100%
+    .burger
+      display: block
+      position: relative
+      grid-row-start: 2
+      grid-row-end: 3
+      grid-column-start: 3
+      grid-column-end: 4
+      img
+
+        width: 50px
+    #search
+      grid-row-start: 3
+      grid-row-end: 4
+      grid-column-start: 1
+      grid-column-end: 5
+    nav
+    #top-nav
+      display: block
+      grid-row-start: 4
+      grid-row-end: 5
+      grid-column-start: 1
+      grid-column-end: 5
+    #log
+      grid-row-start: 5
+      grid-row-end: 6
+      grid-column-start: 1
+      grid-column-end: 5

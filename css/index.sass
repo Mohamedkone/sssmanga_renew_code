@@ -73,7 +73,7 @@ section
     display: inline-block
     min-width: 10%
     max-width: 20rem
-    margin: 1rem
+    margin: 3rem
     font-size: 1rem
     text-decoration: none
     overflow: hidden
@@ -97,10 +97,8 @@ section
 .suggestion
     background: $b_color2
     ul
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        justify-items: center
-        max-width: 1000px
+        max-width: 80%
+        .card
 
 .top-artist
     background: $b_color1
@@ -111,13 +109,14 @@ section
         margin: 60px auto
         justify-content: center
         justify-content: space-around
-        width: 1000px
+        width: 80%
     a
         color: $lblue
         text-decoration: none
 
 .artist
     transition: $transition_card
+    margin: 10px
 
     .bubble
         position: relative
@@ -154,9 +153,8 @@ section
         grid-template-columns: 20% 80%
         margin: 50px auto
         width: 50%
-        height: 200px
+
         .artist
-            display: block
             p
                 padding: 20px
                 font-size: $f_sizeS
@@ -182,8 +180,9 @@ section
 .images
     background: $b_color1
     .container
-        display: grid
-        width: 60%
+        display: flex
+        flex-wrap: wrap
+        width: 40%
         margin: 60px auto
         grid-template-columns: 1fr 1fr 1fr 1fr
         justify-content: center
@@ -197,10 +196,14 @@ section
 
 .manhwa
     background: $b_color2
-    ul
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        justify-items: center
-        max-width: 1000px
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1260px)
+    .color-spread
+        .artist
+            display: flex
+        .spread
+            grid-template-columns: 100%
+
+@media screen and (max-width: 420px)
+    h2
+        font-size: $f_sizeM

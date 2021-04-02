@@ -1,4 +1,4 @@
-.hov {
+.hover {
   display: block;
   position: absolute;
   background: rgba(10, 190, 200, 0.1);
@@ -14,14 +14,14 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 20px auto 40px auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   row-gap: 30px;
 }
 
@@ -44,7 +44,7 @@ header #log {
 
 header #log a {
   color: #fff;
-  background-color: #307CFF;
+  background-color: #307cff;
   font-size: 18px;
   text-decoration: none;
   padding: 5px 25px;
@@ -57,13 +57,13 @@ header #top-nav {
   display: -ms-flexbox;
   display: flex;
   -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
   width: 100%;
   list-style-type: none;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 header #top-nav a {
@@ -76,7 +76,7 @@ header #top-nav a {
 
 header #top-nav a:hover {
   text-decoration: none;
-  color: #307CFF;
+  color: #307cff;
 }
 
 header #top-nav a:focus {
@@ -96,12 +96,12 @@ header #top-nav a:visited {
 
 header #search {
   -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
 }
 
 header #search .field {
   padding: 5px 10px;
-  border: 1px solid #307CFF;
+  border: 1px solid #307cff;
   border-radius: 10px;
   width: 70%;
   margin-left: auto;
@@ -109,7 +109,7 @@ header #search .field {
 
 header #search input {
   font-size: 1.5em;
-  font-font-family: Georgia, 'Times New Roman', Times, serif;
+  font-font-family: Georgia, "Times New Roman", Times, serif;
   border: none;
   width: 80%;
 }
@@ -143,12 +143,12 @@ footer .tree {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 footer .tree a {
@@ -165,6 +165,18 @@ footer .tree a {
   padding: 0;
 }
 
+.hover {
+  display: block;
+  position: absolute;
+  background: rgba(10, 190, 200, 0.1);
+  width: 70%;
+  height: 10000px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 8;
+}
+
 .cover {
   width: 100%;
   height: 735px;
@@ -175,15 +187,15 @@ footer .tree a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 h2 {
   font-size: 44px;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 section {
@@ -203,13 +215,13 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card-image img {
@@ -217,9 +229,9 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .card-list {
@@ -240,18 +252,20 @@ section {
   text-decoration: none;
   overflow: hidden;
   -webkit-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-  -webkit-transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s;
   transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s, -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s,
+    -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
 }
 
 .card:hover {
   -webkit-transform: translateY(-0.5rem) scale(1.0125);
-          transform: translateY(-0.5rem) scale(1.0125);
+  transform: translateY(-0.5rem) scale(1.0125);
   -webkit-box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .card-description {
@@ -277,7 +291,7 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   max-width: 1000px;
 }
@@ -292,26 +306,28 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 60px auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 1000px;
 }
 
 .top-artist a {
-  color: #307CFF;
+  color: #307cff;
   text-decoration: none;
 }
 
 .artist {
-  -webkit-transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s;
   transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s, -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s,
+    -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
 }
 
 .artist .bubble {
@@ -323,16 +339,16 @@ section {
   background-color: #000;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .artist .bubble img {
   width: 250px;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   border-radius: 50%;
 }
 
@@ -345,9 +361,9 @@ section {
 
 .artist .artist:hover {
   -webkit-transform: translateY(-0.5rem) scale(1.0125);
-          transform: translateY(-0.5rem) scale(1.0125);
+  transform: translateY(-0.5rem) scale(1.0125);
   -webkit-box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
 }
 
 .color-spread {
@@ -358,9 +374,9 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 80%;
   margin: 50px auto;
-  width: 70%;
+  width: 50%;
   height: 200px;
 }
 
@@ -390,27 +406,61 @@ section {
   height: 200px;
   border-radius: 20px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-  -webkit-transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out,
+    -webkit-box-shadow 0.1s;
   transition: -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s, -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s,
+    -webkit-transform 0.1s ease-in-out, -webkit-box-shadow 0.1s;
 }
 
 .color-spread img:hover {
   -webkit-box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
   -webkit-transform: translateY(-0.5rem) scale(1.0125);
-          transform: translateY(-0.5rem) scale(1.0125);
+  transform: translateY(-0.5rem) scale(1.0125);
 }
 
 .images {
   background: #f9f9f9;
 }
 
+.images .container {
+  display: -ms-grid;
+  display: grid;
+  width: 60%;
+  margin: 60px auto;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.images img {
+  border-radius: 10px;
+  margin: 10px 20px;
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .manhwa {
   background: #ebebeb;
+}
+
+.manhwa ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 1000px;
 }
 /*# sourceMappingURL=index.css.map */

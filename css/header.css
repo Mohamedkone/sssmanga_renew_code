@@ -14,14 +14,14 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 20px auto 40px auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   row-gap: 30px;
 }
 
@@ -44,7 +44,7 @@ header #log {
 
 header #log a {
   color: #fff;
-  background-color: #307CFF;
+  background-color: #307cff;
   font-size: 18px;
   text-decoration: none;
   padding: 5px 25px;
@@ -57,13 +57,13 @@ header #top-nav {
   display: -ms-flexbox;
   display: flex;
   -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
   width: 100%;
   list-style-type: none;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 header #top-nav a {
@@ -76,7 +76,7 @@ header #top-nav a {
 
 header #top-nav a:hover {
   text-decoration: none;
-  color: #307CFF;
+  color: #307cff;
 }
 
 header #top-nav a:focus {
@@ -96,12 +96,12 @@ header #top-nav a:visited {
 
 header #search {
   -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
 }
 
 header #search .field {
   padding: 5px 10px;
-  border: 1px solid #307CFF;
+  border: 1px solid #307cff;
   border-radius: 10px;
   width: 70%;
   margin-left: auto;
@@ -109,7 +109,7 @@ header #search .field {
 
 header #search input {
   font-size: 1.5em;
-  font-font-family: Georgia, 'Times New Roman', Times, serif;
+  font-font-family: Georgia, "Times New Roman", Times, serif;
   border: none;
   width: 80%;
 }
@@ -123,5 +123,43 @@ header #search input[type="search"]::-webkit-search-cancel-button,
 header #search input[type="search"]::-webkit-search-results-button,
 header #search input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+}
+
+@media screen and (max-width: 1260px) {
+  header #top-nav {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header #log {
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+  }
+  header #search {
+    -ms-grid-row: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+  }
+  header #search .field {
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=header.css.map */

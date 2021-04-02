@@ -36,7 +36,6 @@ header
     margin: auto
   #title
     margin: auto 0
-    text-align:
 
   #log
     margin: auto 0
@@ -98,3 +97,30 @@ header
     input[type="search"]::-webkit-search-results-button,
     input[type="search"]::-webkit-search-results-decoration
       -webkit-appearance: none
+
+@media screen and (max-width: 1260px)
+  header
+
+    #top-nav
+      grid-column-start: 1
+      grid-column-end: 4
+      grid-row-start: 4
+      grid-row-end: 5
+      justify-content: center
+    #log
+      grid-row-start: 2
+      grid-row-end: 3
+      grid-column-start: 1
+      grid-column-end: 4
+      text-align: center
+    #search
+      grid-row-start: 3
+      grid-row-end: 4
+      grid-column-start: 1
+      grid-column-end: 4
+      justify-content: center
+      margin: auto
+      .field
+        margin: auto
+
+@media screen and (max-width: 1024px)

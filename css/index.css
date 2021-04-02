@@ -125,6 +125,17 @@ header #search input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+@media screen and (max-width: 1260px) {
+  #log {
+    -ms-grid-row: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    text-align: center;
+  }
+}
+
 footer {
   background-color: #f9f9f9;
   padding: 20px 0;

@@ -13,6 +13,7 @@ $transition_card: transform 0.1s ease-in-out, box-shadow 0.1s
 .cover
     width: 100%
     height: 735px
+    padding-top: initial
     img
         width: 100%
         height: 100%
@@ -27,7 +28,7 @@ h2
 section
     min-height: 700px
     background-color: $b_color1
-    padding-top: 60px
+    padding: 60px 0
     text-align: center
     position: relative
     width: 100%
@@ -85,8 +86,8 @@ section
     ul
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-
         justify-items: center
+        max-width: 1000px
 
 .top-artist
     background: $b_color1
@@ -94,37 +95,40 @@ section
     .container
         display: flex
         flex-wrap: wrap
-        margin: 60px 0
+        margin: 60px auto
         justify-content: center
         justify-content: space-around
-
-    .artist
-
-        transition: $transition_card
-
-        .bubble
-            max-width: 250px
-            width: 250px
-            max-height: 250px
-            height: 250px
-            background-color: #000
-            border-radius: 50%
-            box-shadow: $shadow_card
-            img
-                width: 250px
-                height: 250px
-                object-fit: cover
-                object-position: center
-                border-radius: 50%
-        p
-            margin: 10px
-            font:
-                size: $f_sizeM
-                family: $f_fam2
-                box-shadow: $shadow_card
+        width: 1000px
     a
         color: $lblue
         text-decoration: none
+
+.artist
+    transition: $transition_card
+
+    .bubble
+        position: relative
+        max-width: 250px
+        width: 250px
+        max-height: 250px
+        height: 250px
+        background-color: #000
+        border-radius: 50%
+        box-shadow: $shadow_card
+        img
+            width: 250px
+            height: 250px
+            object-fit: cover
+            object-position: center
+            border-radius: 50%
+
+    p
+        margin: 10px
+        font:
+            size: $f_sizeM
+            family: $f_fam2
+            box-shadow: $shadow_card
+
         
 
     .artist:hover
@@ -133,6 +137,33 @@ section
 
 .color-spread
     background: $b_color2
+
+    
+    .spread
+        display: grid
+        grid-template-columns: 20% 80%
+        margin: 50px auto
+        width: 70%
+        height: 200px
+        .artist
+            display: block
+            p
+                padding: 20px
+                font-size: $f_sizeS
+        .bubble
+            max-width: 100px
+            width: 100px
+            max-height: 100px
+            height: 100px
+            img
+                width: 100px
+                height: 100px
+    img
+        width: 100%
+        height: 200px
+        border-radius: 20px
+        object-fit: cover
+
 
 .images
     background: $b_color1

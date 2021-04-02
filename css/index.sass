@@ -1,4 +1,6 @@
 @import header
+@import footer
+
 $b_color1: #f9f9f9
 $b_color2: #ebebeb
 $transform_card: translateY(-0.5rem) scale(1.0125)
@@ -129,8 +131,6 @@ section
             family: $f_fam2
             box-shadow: $shadow_card
 
-        
-
     .artist:hover
         transform: $transform_card
         box-shadow: $shadow_hover
@@ -138,7 +138,6 @@ section
 .color-spread
     background: $b_color2
 
-    
     .spread
         display: grid
         grid-template-columns: 20% 80%
@@ -163,7 +162,11 @@ section
         height: 200px
         border-radius: 20px
         object-fit: cover
-
+        box-shadow: $shadow_card
+        transition: $transition_card
+    img:hover
+        box-shadow: $shadow_hover
+        transform: $transform_card
 
 .images
     background: $b_color1

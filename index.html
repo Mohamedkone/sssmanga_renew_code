@@ -11,11 +11,11 @@
 
 </html>
 
-<body>
+<body onresize="navResize()">
 
     <header>
-        <div id="light-shift">
-            <img src="assets/light_shift.svg" alt="">
+        <div id="light-shift" onclick="light_switch()">
+            <img id="mode" src="assets/light_shift.svg" alt="light switch">
         </div>
 
         <div id="title">
@@ -25,7 +25,7 @@
             <img src="assets/light-line.svg" alt="line" id="line">
         </div>
 
-        <div class="burger">
+        <div id="burger" onclick="dropDown()">
             <img src="assets/l_burger_menu.svg" alt="">
         </div>
 
@@ -394,4 +394,5 @@
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>

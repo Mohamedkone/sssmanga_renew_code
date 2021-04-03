@@ -1,4 +1,4 @@
-$lblue: #307CFF
+
 $f_fam1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 $f_fam2: Georgia, 'Times New Roman', Times, serif
 $f_weight: bold
@@ -7,6 +7,11 @@ $f_sizeXS: 15px
 $f_sizeS: 18px
 $f_sizeM: 25px
 $f_sizeL: 32px
+$mblue: #307CFF
+$lightGrey: #969696
+$white: #FFF
+$t_color: #fff
+$log_color: #FFF
 
 .hover
   display: block
@@ -42,8 +47,8 @@ header
     margin: auto 0
     text-align: end
     a
-      color: #fff
-      background-color: $lblue
+      color: $log_color
+      background-color: $mblue
       font-size: $f_sizeS
       text-decoration: none
       padding: 5px 25px
@@ -62,10 +67,10 @@ header
       margin-right: 50px
       font-size: 20px
       font-weight: bold
-      color: #000
+      color: $t_color
     a:hover
       text-decoration: none
-      color: $lblue
+      color: $mblue
     a:focus
       text-decoration: none
       color: none
@@ -80,7 +85,7 @@ header
     grid-column-start: 3
     .field
       padding: 5px 10px
-      border: 1px solid $lblue
+      border: 1px solid $mblue
       border-radius: 10px
       width: 70%
       margin-left: auto
@@ -98,6 +103,52 @@ header
     input[type="search"]::-webkit-search-results-button,
     input[type="search"]::-webkit-search-results-decoration
       -webkit-appearance: none
+
+.switch
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 34px
+
+.switch input
+  opacity: 0
+  width: 0
+  height: 0
+
+.slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $lightGrey
+  transition: .4s
+
+.slider:before
+  position: absolute
+  content: ""
+  height: 26px
+  width: 26px
+  left: 4px
+  bottom: 4px
+  background-color: $white
+  transition: .4s
+
+input:checked + .slider
+  background-color: $mblue
+
+input:focus + .slider
+  outline: none
+
+input:checked + .slider:before
+  transform: translateX(26px)
+
+.slider.round
+  border-radius: 34px
+
+.slider.round:before
+  border-radius: 50%
 
 @media screen and (max-width: 1260px)
   header

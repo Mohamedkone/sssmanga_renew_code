@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="d_css/index.css">
+    <link rel="stylesheet" href="d_css/header.css">
+    <link rel="stylesheet" href="d_css/footer.css">
+
 </head>
 
 </html>
@@ -14,8 +15,11 @@
 <body onresize="navResize()">
 
     <header>
-        <div id="light-shift" onclick="light_switch()">
-            <img id="mode" src="assets/light_shift.svg" alt="light switch">
+        <div id="light-shift">
+            <label class="switch" onclick="light_switch()">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
 
         <div id="title">

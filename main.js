@@ -32,11 +32,7 @@ function navResize(){
 var l_switch = document.getElementById("mode");
 
 function light_switch(){
-    var l_switch = document.getElementById("mode");
-        if(l_switch.src == 'assets/dark_shift.svg'){
-            l_switch.src = 'assets/light_shift.svg';
-    }
-        else{
-            l_switch.src = 'assets/dark_shift.svg';
-    }
+   
+       document.body.style.background = "#000"
+
 }
